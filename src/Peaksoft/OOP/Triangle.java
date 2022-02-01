@@ -1,10 +1,11 @@
 package Peaksoft.OOP;
 
 public class Triangle {
-    double width,height,result;
+    double a,b,c;
 
-     void area() {
-        result = (width*height)/2;
+     double area() {
+        double result = (a*b*c)/2;
+        return result;
      }
 }
 
