@@ -5,83 +5,64 @@ public class Main {
     public static void main(String[] args) {
 
         Person adilet = new Person();
-        adilet.name = "Adilet";
-        adilet.lastName = "Jumakadyr";
-        adilet.age = 18;
-        adilet.color = "white";
-        adilet.education = true;
-        adilet.gender = 'm';
-        adilet.height = 185;
-        adilet.weight = 85.2;
-        adilet.nationality = "kyrgyz";
-        adilet.status = "Single";
+       adilet.setName("Adilet");
+       adilet.setLastName("Jumakadyrov");
+       adilet.setGender('M');
+       adilet.setHeight(185);
+       adilet.setEducation(true);
+       adilet.setNationality("Kyrgyz");
+       adilet.setStatus("Single");
+       adilet.setWeight(85);
+       adilet.setAge((byte) 18);
 
-        Person aziza = new Person();
-        aziza.name = "Aziza";
-        aziza.lastName = "Jumakadyrova";
-        aziza.age = 25;
-        aziza.color = "white";
-        aziza.education = true;
-        aziza.gender = 'f';
-        aziza.height = 155;
-        aziza.weight = 55.2;
-        aziza.nationality = "kyrgyz";
-        aziza.status = "Single";
-
-        adilet.sayHello();
-        aziza.run();
-
-        System.out.println();
+        System.out.println(adilet.toString());
 
 
         Laptop hp = new Laptop();
-        hp.cpu = "AMD";
-        hp.memory = 128;
-        hp.ram = 32;
-        hp.color = "black";
-        hp.name = "HP";
+        hp.setCpu("AMD");
+        hp.setMemory(128);
+        hp.setRam(32);
+        hp.setColor("Black");
+        hp.setName("HP");
 
         Laptop fujitsu = new Laptop();
-        fujitsu.name = "Fujitsu";
-        fujitsu.cpu = "Core i5";
-        fujitsu.ram = 16;
-        fujitsu.memory = 128;
-        fujitsu.color = "White";
+        fujitsu.setName("Fujisu");
+        fujitsu.setCpu("Core i5");
+        fujitsu.setRam(16);
+        fujitsu.setMemory(128);
+        fujitsu.setColor("White");
 
         Laptop aser = new Laptop();
-        aser.name = "Aser";
-        aser.cpu = "Core i7";
-        aser.memory = 360;
-        aser.ram = 8;
-        aser.color = "Red";
+        aser.setName("Aser");
+        aser.setCpu("Core i7");
+        aser.setMemory(360);
+        aser.setRam(8);
+        aser.setColor("Red");
 
         Laptop toshiba = new Laptop();
-        toshiba.name = "toshiba";
-        toshiba.cpu = "AMD Razon 5";
-        toshiba.ram = 4;
-        toshiba.memory = 320;
-        toshiba.color = "Green";
+        toshiba.setName("Toshiba");
+        toshiba.setCpu("AMD Razon 5");
+        toshiba.setRam(4);
+        toshiba.setMemory(320);
+        toshiba.setColor("Green");
 
         Laptop asus = new Laptop();
-        asus.name = "Asus";
-        asus.cpu = "Core i9";
-        asus.ram = 64;
-        asus.memory = 560;
-        asus.color = "Yellow";
+        asus.setName("Asus");
+        asus.setCpu("Core i9");
+        asus.setRam(64);
+        asus.setMemory(-1);
+        asus.setColor("Yellow");
 
-        asus.turnOff();
-        hp.turnOn();
-        aser.turnOn();
-        toshiba.turnOff();
-        fujitsu.turnOff();
 
-            System.out.println();
+
+        System.out.println();
 
         Peaksoft peaksoft = new Peaksoft();
 
+
         String[] rooms = {"FACEBOOK", "GOOGLE", "APPLE", "SPACE", "STARLING", "CAFETERIA"};
-        peaksoft.rooms = rooms;
-        peaksoft.showRooms();
+
+        hp.showInfo();
 
 
     }
