@@ -3,8 +3,9 @@ package Peaksoft.OOP;
 public class Triangle {
     double width,height,result;
 
-     void area() {
+     double area() {
         result = (width*height)/2;
+        return result;
      }
 }
 

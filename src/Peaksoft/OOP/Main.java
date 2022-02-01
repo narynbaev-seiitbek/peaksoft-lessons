@@ -6,7 +6,6 @@ public class Main {
         Triangle triangle = new Triangle();
         triangle.height = 15;
         triangle.width = 35.5;
-        triangle.area();
-        System.out.println("Площадь треугольника: "+triangle.result);
+        System.out.println("Площадь треугольника: "+triangle.area());
     }
 }
