@@ -17,14 +17,14 @@ public class Main {
         adilet.status = "Single";
 
         Person aziza = new Person();
-        aziza.name = "Adilet";
-        aziza.lastName = "Jumakadyr";
-        aziza.age = 18;
+        aziza.name = "Aziza";
+        aziza.lastName = "Jumakadyrova";
+        aziza.age = 25;
         aziza.color = "white";
         aziza.education = true;
-        aziza.gender = 'm';
-        aziza.height = 185;
-        aziza.weight = 85.2;
+        aziza.gender = 'f';
+        aziza.height = 155;
+        aziza.weight = 55.2;
         aziza.nationality = "kyrgyz";
         aziza.status = "Single";
 
@@ -75,6 +75,13 @@ public class Main {
         toshiba.turnOff();
         fujitsu.turnOff();
 
+            System.out.println();
+
+        Peaksoft peaksoft = new Peaksoft();
+
+        String[] rooms = {"FACEBOOK", "GOOGLE", "APPLE", "SPACE", "STARLING", "CAFETERIA"};
+        peaksoft.rooms = rooms;
+        peaksoft.showRooms();
 
 
     }
