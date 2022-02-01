@@ -8,7 +8,5 @@ public class Main {
         triangle.width = 35.5;
         triangle.area();
         System.out.println("Площадь треугольника: "+triangle.result);
-
-
     }
 }
