@@ -8,49 +8,64 @@ public class Laptop {
     private int ram;
     private String color;
 
+    public Laptop(String name, String cpu, int memory, int ram, String color ) {
+        this.name = name;
+        this.cpu = cpu;
+        this.memory = memory;
+        this.ram = ram;
+        this.color = color;
+    }
+
     public String getName() {
         return name;
     }
     public void setName(String name) {
+
         this.name = name;
     }
     public String getCpu() {
+
         return cpu;
     }
     public void setCpu(String cpu) {
+
         this.cpu = cpu;
     }
     public int getMemory() {
+
         return memory;
     }
     public void setMemory(int memory) {
-        if (memory < 0) {
-            System.out.println("error memory is not a valid");
+        if (memory <= 0) {
+            System.err.println("error memory is not valid");
         } else {
             this.memory = memory;
         }
     }
     public int getRam() {
+
         return ram;
     }
     public void setRam(int ram) {
+
         this.ram = ram;
     }
     public String getColor() {
+
         return color;
     }
     public void setColor(String color) {
+
         this.color = color;
     }
-    public void showInfoh() {
 
-    }
-    public void showInfo() {
-        System.out.printf("Laptop info: \n" +
-                "Laptop name: " + name + '\n' +
-                "Laptop cpu: " + cpu + '\n' +
-                "Laptop memory: " + memory + '\n'+
-                "Laptop ram: " + ram + '\n'+
-                "Laptop color: " + color + '\n');
+    @Override
+    public String toString() {
+        return "Laptop information:n " +'\n'+
+                "name='" + name + '\n' +
+                "cpu='" + cpu + '\n' +
+                "memory=" + memory +'\n'+
+                "ram=" + ram +'\n'+
+                "color='" + color + '\n';
     }
 }
